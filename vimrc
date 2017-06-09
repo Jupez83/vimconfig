@@ -25,6 +25,7 @@ set t_md= " disable bold text
 set confirm " confirm :q in case of unsaved changes
 "set fileencoding=utf-8 " encoding used when saving file
 set nobackup " do not keep the backup~ file
+set noswapfile " disable swap files
 
 " edit settings
 set autoindent " indenting source code
