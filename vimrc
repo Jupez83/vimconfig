@@ -20,6 +20,12 @@ set sidescroll=5 " the minimal number of columns to scroll horizontally
 set title " set screen title
 set nowrap " line breaking
 set t_md= " disable bold text
+if &term =~ '256color'
+   " disable Background Color Erase (BCE) so that color schemes
+   " render properly when inside 256-color tmux and GNU screen.
+   " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+   set t_ut=
+endif
 
 " write settings
 set confirm " confirm :q in case of unsaved changes
